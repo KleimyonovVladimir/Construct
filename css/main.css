@@ -26,8 +26,13 @@ h4,
 h5 {
   padding: 0;
   margin: 0;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 18px;
 }
 p {
+  color: #48555b;
   margin: 0;
   padding: 0;
 }
@@ -42,7 +47,7 @@ p {
   color: #fff;
   background: url(../img/background-header.jpg) no-repeat center top / cover;
   text-align: center;
-  height: 90vh;
+  height: 95vh;
   position: relative;
 }
 .offer {
@@ -61,6 +66,7 @@ p {
 }
 .offer__subtext {
   font-size: 16px;
+  color: #fff;
 }
 .scroll {
   letter-spacing: 4px;
@@ -71,18 +77,29 @@ p {
 }
 
 .nav {
-  padding: 24px 0;
+  padding-top: 24px;
+}
+.nav::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
+.menu__nav {
+  width: 45%;
+}
+
 .menu__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 .menu__item {
   width: fit-content;
@@ -97,6 +114,62 @@ p {
 }
 .menu__link:hover {
   color: #00a4e5;
-  font-weight: bold;
   transition: 0.2s;
+}
+.our-story {
+  padding: 60px 0;
+}
+.our-story-title {
+  text-align: center;
+}
+.line {
+  border-bottom: 2px solid #00a4e5;
+  height: 2px;
+  width: 50px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 85px;
+}
+
+.about__history {
+  width: 405px;
+  letter-spacing: 0.01em;
+}
+.about__history-title {
+  text-transform: none;
+  font-size: 20px;
+  line-height: 27px;
+  padding-bottom: 30px;
+  letter-spacing: 0.01em;
+}
+.about__history-title span {
+  color: #00a4e5;
+}
+.about__history-text {
+  font-size: 13px;
+  line-height: 23px;
+}
+.about__abilities-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: fit-content;
+  margin-top: 25px;
+}
+.about__abilities-item {
+  position: relative;
+}
+.about__abilities-text {
+  position: absolute;
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  top: 0;
+  padding: 15px;
 }
