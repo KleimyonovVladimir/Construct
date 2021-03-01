@@ -230,3 +230,23 @@ p {
   line-height: 23px;
   letter-spacing: 0.01em;
 }
+.call-to-action {
+  padding-top: 60px;
+  background: url(../img/background-build.jpg) no-repeat center bottom / cover;
+  height: 500px;
+}
+.question {
+  text-align: center;
+  padding-top: 120px;
+}
+.question__title {
+  font-size: 30px;
+  line-height: 36px;
+  width: 350px;
+  margin: 0 auto;
+  text-transform: none;
+}
+.question__button {
+  display: inline-block;
+  margin-top: 40px;
+}
