@@ -36,6 +36,14 @@ p {
   margin: 0;
   padding: 0;
 }
+.btn {
+  background-color: #00a4e5;
+  border: 1px solid #00a4e5;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 11px 29px;
+}
 
 .container {
   width: 940px;
@@ -172,4 +180,53 @@ p {
   text-transform: uppercase;
   top: 0;
   padding: 15px;
+}
+.our-capabilities {
+  padding: 60px 0;
+}
+.services-info {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-gap: 32px;
+  align-items: center;
+}
+.services-info__title {
+  position: relative;
+}
+.services-info__title::after {
+  content: "";
+  border-bottom: 2px solid #00a4e5;
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+}
+.services-info__text {
+  width: 385px;
+}
+.services-info__link {
+  width: fit-content;
+  margin-left: 32px;
+}
+.our-skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 28px;
+  margin-top: 80px;
+}
+.our-skills-list__item {
+  border: 1px solid #e6e6e6;
+  padding: 38px 22px;
+}
+.our-skills-list__title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 25px;
+  margin-bottom: 13px;
+}
+.our-skills-list__text {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
 }
