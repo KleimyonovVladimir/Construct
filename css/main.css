@@ -41,7 +41,6 @@ p {
   border: 1px solid #00a4e5;
   font-weight: bold;
   font-size: 13px;
-  line-height: 18px;
   padding: 11px 29px;
 }
 
@@ -249,4 +248,42 @@ p {
 .question__button {
   display: inline-block;
   margin-top: 40px;
+}
+.sending-mail {
+  background-color: #171819;
+  padding: 30px;
+}
+.mailing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mailing__title {
+  color: #fff;
+  text-transform: none;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  margin-right: 70px;
+}
+.mailing__form {
+  position: relative;
+}
+.mailing__input {
+  padding: 10px;
+  width: 250px;
+  outline: none;
+  border: 1px solid #979797;
+  box-sizing: border-box;
+}
+.mailing__input::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+.mailing-button {
+  line-height: 100%;
+  width: fit-content;
+  height: 100%;
+  position: absolute;
+  padding: 11px 49px;
 }
