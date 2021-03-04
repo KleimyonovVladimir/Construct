@@ -49,6 +49,7 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
+/* header */
 .header {
   padding-top: 41px;
   color: #fff;
@@ -82,6 +83,7 @@ p {
   top: 90%;
   transform: translate(-50%, -50%);
 }
+/* nav */
 
 .nav {
   padding-top: 24px;
@@ -123,6 +125,8 @@ p {
   color: #00a4e5;
   transition: 0.2s;
 }
+/* our-story */
+
 .our-story {
   padding: 60px 0;
 }
@@ -180,6 +184,8 @@ p {
   top: 0;
   padding: 15px;
 }
+/* our-capabilities */
+
 .our-capabilities {
   padding: 60px 0;
 }
@@ -229,6 +235,8 @@ p {
   line-height: 23px;
   letter-spacing: 0.01em;
 }
+/* call-to-action */
+
 .call-to-action {
   padding-top: 60px;
   background: url(../img/background-build.jpg) no-repeat center bottom / cover;
@@ -249,6 +257,8 @@ p {
   display: inline-block;
   margin-top: 40px;
 }
+/* sending-mail */
+
 .sending-mail {
   background-color: #171819;
   padding: 30px;
@@ -289,4 +299,84 @@ p {
   width: fit-content;
   height: 100%;
   display: inline-block;
+}
+
+/* footer */
+
+.footer {
+  background-color: #141a20;
+  padding-top: 40px;
+}
+.footer p {
+  color: #fff;
+  font-weight: 400;
+}
+.footer-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 70px;
+}
+
+.footer-info {
+  width: 220px;
+}
+.footer-title {
+  letter-spacing: 0.07em;
+  font-size: 11px;
+  line-height: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+.footer-info__title {
+  margin-bottom: 10px;
+}
+.footer-info__logo {
+  margin-top: 19px;
+  margin-bottom: 15px;
+}
+
+.footer-links__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  margin-top: 10px;
+}
+.footer-links__link {
+  letter-spacing: 0.07em;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 25px;
+  white-space: nowrap;
+}
+.footer-links__item {
+}
+.footer-contacts {
+}
+.footer-contacts__title {
+  margin-bottom: 15px;
+}
+.footer-contacts__phone {
+  margin: 20px 0;
+}
+.footer-networks {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.footer-networks__img {
+  width: 12px;
+  height: 12px;
+}
+.footer-label {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  color: #fff;
+  margin-top: 40px;
+  padding: 22px 0;
+  background-color: #171819;
+  background-size: cover;
+  text-align: center;
 }
