@@ -1,0 +1,132 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .services-info {
+    grid-template-columns: 1fr auto;
+  }
+  .services-info__link {
+    margin: 0;
+  }
+  .footer-box {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .menu__nav {
+    width: auto;
+  }
+  .menu__item {
+    margin-right: 15px;
+  }
+  .services-info {
+    grid-template-columns: 1fr;
+  }
+  .our-skills-list {
+    grid-template-columns: 1fr;
+  }
+  .mailing {
+    display: block;
+    text-align: center;
+  }
+  .mailing__title {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .mailing__form {
+    display: inline-flex;
+  }
+  .footer-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .offer__title {
+    font-size: 50px;
+  }
+  .nav {
+    display: none;
+  }
+  .hamburger {
+    margin-top: 25px;
+    display: block;
+  }
+  .hamburger__img {
+    width: 40px;
+    height: 40px;
+  }
+  .our-story {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .about__history {
+    width: auto;
+  }
+  .about__abilities-list {
+    grid-template-columns: 1fr;
+  }
+  .our-capabilities {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .services-info {
+    text-align: center;
+  }
+  .services-info__title::after {
+    transform: translatex(-50%);
+    left: 50%;
+  }
+  .services-info__link {
+    margin: 0 auto;
+  }
+  .our-skills-list__item {
+    text-align: center;
+  }
+  .services-info__text {
+    width: auto;
+  }
+  .question__title {
+    width: auto;
+  }
+  .mailing__form {
+    display: block;
+    width: fit-content;
+    height: auto;
+  }
+  .mailing-button {
+    margin-top: 20px;
+  }
+  .footer-box {
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+  }
+  .footer-networks {
+    display: flex;
+    justify-content: space-around;
+  }
+}
