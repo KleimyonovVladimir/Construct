@@ -10,8 +10,7 @@ $(document).ready(function () {
     );
     return false;
   });
-  $;
-  "hamburger__icon".click(function (e) {
+  $("hamburger__icon").click(function (e) {
     e.preventDefault();
     $("menu__list").addClass();
   });
