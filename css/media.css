@@ -114,9 +114,9 @@
     width: auto;
   }
   .mailing__form {
-    display: block;
-    width: fit-content;
     height: auto;
+    display: flex;
+    flex-direction: column;
   }
   .mailing-button {
     margin-top: 20px;
@@ -127,6 +127,8 @@
   }
   .footer-networks {
     display: flex;
-    justify-content: space-around;
+  }
+  .footer-networks__item {
+    margin-right: 30px;
   }
 }

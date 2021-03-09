@@ -6,12 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap"
     rel="stylesheet">
-
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/media.css">
   <title>Konstruct</title>
@@ -33,14 +30,14 @@
   <section id="nav" class="nav">
     <div class="container">
       <div class="menu">
-        <a href="#" class="menu__logo"><img src="./img/logo-black.svg" class="menu__logo" alt="Konstruct"></a></a>
+        <a href="#" class="menu__logo"><img src="./img/logo-black.svg" class="menu__logo" alt="Konstruct"></a>
         <nav class="menu__nav">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Work</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+            <li class="menu__item"><a href="#header" class="menu__link scrollto">Home</a></li>
+            <li class="menu__item"><a href="#our-story" class="menu__link scrollto">About</a></li>
+            <li class="menu__item"><a href="#our-capabilities" class="menu__link scrollto">Services</a></li>
+            <li class="menu__item"><a href="#call-to-action" class="menu__link scrollto">Work</a></li>
+            <li class="menu__item"><a href="#footer" class="menu__link scrollto">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -49,7 +46,6 @@
   <section id="our-story" class="our-story">
     <div class="container">
       <h2 class="our-story-title">Our story</h2>
-      <div class="line"></div>
       <div class="about">
         <div class="about__history">
           <h3 class="about__history-title">Founded in 2011 by John Mathew Smith, <span>Konstruct</span> has become the
@@ -122,9 +118,9 @@
         <h2 class="mailing__title">
           Newsletter Signup
         </h2>
-        <form class="mailing__form">
+        <form action="#" class="mailing__form">
           <input type="text" placeholder="test@youremail.com" class="mailing__input">
-          <a href="#" class="mailing-button btn">Signup</a>
+          <button type="submit" class="mailing-button btn">Signup</button>
         </form>
 
       </div>
@@ -137,7 +133,7 @@
           <h5 class="footer-info__title footer-title">
             Company
           </h5>
-          <img src="./img/logo.svg" class="footer-info__logo" alt="Konstruct">
+          <a href="#"><img src="./img/logo.svg" class="footer-info__logo" alt="Konstruct"></a>
           <p class="footer-info__text">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
             dolore magna aliquam erat.
@@ -189,7 +185,6 @@
             </li>
           </ul>
         </div>
-
         <div class="footer-contacts">
           <h5 class="footer-contacts__title footer-title">Contact us</h5>
           <div class="footer-contacts__about">
@@ -213,13 +208,11 @@
         </ul>
       </div>
     </div>
-    <div class="container">
-      <div class="footer-label">
-        © 2017 Konstruct Inc. Designed by Jane Kathryn Teo
-      </div>
+    <div class="footer-label">
+      © 2017 Konstruct Inc. Designed by Jane Kathryn Teo
     </div>
   </footer>
-  <script src="./jQuery/jQuery.js"></script>
+  <script src="./js/jQuery.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

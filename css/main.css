@@ -37,12 +37,19 @@ p {
   margin: 0;
   padding: 0;
 }
+button {
+  color: #fff;
+}
 .btn {
   background-color: #00a4e5;
   border: 1px solid #00a4e5;
   font-weight: bold;
   font-size: 13px;
   padding: 8px 29px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #058fc5;
 }
 
 .container {
@@ -56,7 +63,7 @@ p {
   color: #fff;
   background: url(../img/background-header.jpg) no-repeat center top / cover;
   text-align: center;
-  height: 95vh;
+  height: calc(100vh - 69px);
   position: relative;
 }
 .hamburger {
@@ -90,13 +97,14 @@ p {
 /* nav */
 
 .nav {
-  padding-top: 24px;
+  position: relative;
+  padding: 24px 0;
 }
 .nav::after {
   content: "";
   position: absolute;
   width: 100%;
-  bottom: -20px;
+  bottom: 0;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -124,10 +132,10 @@ p {
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 1px;
+  transition: 0.3s;
 }
 .menu__link:hover {
   color: #00a4e5;
-  transition: 0.2s;
 }
 /* our-story */
 
@@ -136,13 +144,17 @@ p {
 }
 .our-story-title {
   text-align: center;
+  position: relative;
 }
-.line {
+.our-story-title::after {
+  content: "";
+  position: absolute;
   border-bottom: 2px solid #00a4e5;
   height: 2px;
   width: 50px;
-  margin: 0 auto;
-  padding-top: 10px;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
 }
 .about {
   display: grid;
@@ -243,8 +255,13 @@ p {
 
 .call-to-action {
   padding-top: 60px;
-  background: url(../img/background-build.jpg) no-repeat center bottom / cover;
+  background: url(../img/background-build.png);
+  background-repeat: no-repeat;
   height: 500px;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  margin-bottom: -2px;
 }
 .question {
   text-align: center;
@@ -300,9 +317,9 @@ p {
   line-height: 19px;
 }
 .mailing-button {
-  width: fit-content;
   height: 100%;
-  display: inline-block;
+  outline: none;
+  cursor: pointer;
 }
 
 /* footer */
@@ -351,6 +368,10 @@ p {
   font-size: 11px;
   line-height: 25px;
   white-space: nowrap;
+  transition: 0.3s;
+}
+.footer-links__link:hover {
+  color: #00a4e5;
 }
 
 .footer-contacts__title {
