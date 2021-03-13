@@ -10,8 +10,14 @@ $(document).ready(function () {
     );
     return false;
   });
-  $("hamburger__icon").click(function (e) {
+  $(".hamburger__icon").click(function (e) {
     e.preventDefault();
-    $("menu__list").addClass();
+    $(".hamburger__nav").toggleClass("show");
   });
+  $(".hamburger__nav .hamburger__list .hamburger__item .hamburger__link").click(
+    function (e) {
+      e.preventDefault();
+      $(".hamburger__nav").toggleClass("show");
+    }
+  );
 });

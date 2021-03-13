@@ -131,4 +131,31 @@
   .footer-networks__item {
     margin-right: 30px;
   }
+  .hamburger__icon {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .hamburger__list {
+    background-color: #32404f;
+    width: fit-content;
+    margin: 0 auto;
+    z-index: 22;
+    position: relative;
+  }
+  .hamburger__item {
+    border-bottom: 1px solid;
+  }
+  .hamburger__link {
+    color: #fff;
+    padding: 15px 25px;
+  }
+  .hamburger__item_last {
+    border-bottom: none;
+  }
+  ul.menu__list.show {
+    display: block;
+  }
+  .show {
+    display: block;
+  }
 }
